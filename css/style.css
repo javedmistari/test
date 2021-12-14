@@ -76,7 +76,7 @@ a:hover {
         position: absolute;
         top: 22px;
         right: 15px;
-        font-size:20px;
+        font-size: 20px;
     }
 
     .navBar {
@@ -201,6 +201,9 @@ a:hover {
     padding: 15px;
     background: #00aa89;
     color: #fff;
+    margin-left: 0;
+    border-radius: 0;
+    border: none;
 }
 
 .submitBtn:hover {
@@ -212,25 +215,7 @@ label.error {
     color: red;
     font-size: 12px;
     display: block;
-
     margin-top: 5px;
-}
-
-input.error {
-    border: 1px dashed red;
-    font-weight: 300;
-    color: red;
-}
-
-[type="submit"],
-[type="reset"],
-button,
-html [type="button"] {
-    margin-left: 0;
-    border-radius: 0;
-
-    border: none;
-
 }
 
 .inputContainer a {
@@ -251,7 +236,7 @@ html [type="button"] {
     border-bottom: 1px solid #909090;
     padding-bottom: 5px;
 }
-
+.formContainer input[type=date] {padding: 2px;}
 input[type="date"]::-webkit-calendar-picker-indicator {
     background: transparent;
     bottom: 0;
