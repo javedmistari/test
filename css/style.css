@@ -1,0 +1,174 @@
+
+html,body{margin:0 !important; font-size: 16px;}
+.container{width:100%;max-width: 1000px; margin:auto; font-size : clamp(12px, 5vw, 18px);text-align: center; padding: 50px 15px; box-sizing: border-box; font-family: 'Maven Pro', sans-serif; font-weight: 300;}
+.container h1 { color: #0b69a5; font-weight: 300; font-size : clamp(24px, 5vw, 40px)}
+a{text-decoration:none ;}
+
+/* HEADER */
+header{ padding: 12px;}
+header .logo {max-width: 165px; padding-right: 25px;}
+header .logo img{width: 100%; display: block;}
+
+header .container{display: flex; padding:0;}
+.navBar{list-style: none; display: flex;align-items: center; padding: 0; margin: 0;}
+.navBar li a { padding: 0 25px; color: #0b69a5; font-size: 21PX;}
+.navBar li a:hover,a:hover {color: #00aa89;}
+
+#menu{ display:none;}
+@media only screen and (max-width: 768px) {
+   
+        #menu{ display:block;position: absolute;
+            top: 25px;
+            right: 15px;}
+        .navBar{display: none; text-align: left;}
+        header .container{display: block;}
+        header .logo {
+            max-width: 120px;}
+            .navBar li a {
+                width: 100%;
+                display: inline-block;
+                padding: 8px 0;
+                border-bottom: 1px solid #909090;
+                font-size: 16px;
+            }
+            .navBar li a:hover{
+                border-bottom: 1px solid #00aa89;
+            }
+    
+  }
+
+
+.creditScore p{ font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 13px; line-height: 18px; }
+
+/* CALL TO ACTION  */
+
+.callToAction{background: #00aa89;width: 100%;}
+.callToAction .container { display: flex; position: relative;}
+.man{ display: flex; width: 50%; text-align:left;}
+.man img {margin: auto -35px;
+    width: 100px;}
+.man h2 {width :190px ; font-size: 30px; margin: 100px 0 0 50px; color: #fff; font-weight: 300;}
+
+
+.callToAction .form { background: #fff; width: 50%; position: absolute; right: 0; bottom: -50px; box-shadow: 0px 2px 11px 1px rgba(143,143,143,0.75);
+    -webkit-box-shadow: 0px 2px 11px 1px rgba(143,143,143,0.75);
+    -moz-box-shadow: 0px 2px 11px 1px rgba(143,143,143,0.75);
+}
+
+.formContainer {display: flex; flex-wrap: wrap; padding: 30px; justify-content: space-around; }
+.formContainer .inputContainer{
+    width: 45%;
+    margin-bottom: 28px;
+    text-align: left;
+
+}
+
+.formContainer .inputContainer:last-child{margin-bottom: 20px;}
+
+.req{    display: block;
+    margin-top: 15px;
+    font-size: 11px;
+    padding: 0 10px;}
+
+    .term{
+        font-size: 9px;
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+    }
+
+    .submitBtn{
+        display: block;
+        width: 200px;
+        padding: 15px;
+        background: #00aa89;
+        color: #fff;
+    }
+
+    .submitBtn:hover{background: #04325c; color: #fff;}
+    label.error {
+        color: red;
+        font-size: 12px;
+        display: block;
+
+        margin-top: 5px;
+    }
+    
+    input.error {
+        border: 1px dashed red;
+        font-weight: 300;
+        color: red;
+    }
+    
+    [type="submit"], [type="reset"], button, html [type="button"] {
+        margin-left: 0;
+        border-radius: 0;
+      
+        border: none;
+       
+    }
+
+.inputContainer a{ color: #00aa89;}
+.inputContainer a:hover{color: #04325c;}
+.formContainer input[type=text],.formContainer input[type=email],.formContainer input[type=date]  {
+    width:100%; font-size: 18px;font-family: 'Maven Pro', sans-serif; border: none; border-bottom: 1px solid #909090; padding-bottom: 5px;
+}input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+input[type="date"]::before { 
+	content: attr(data-placeholder);
+	width: 100%;
+}
+
+/* hide our custom/fake placeholder text when in focus to show the default
+ * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+ */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+input:focus,*:focus{
+    outline: none;
+}
+::placeholder {
+    color: #000;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+  }
+
+  @media only screen and (max-width: 768px) {
+      .callToAction .container{ display: block;}
+      .man,.callToAction .form{width: 100%; position: relative; bottom: 0;}
+      .man img {
+        margin: 0;
+  }
+  .formContainer .inputContainer,.formContainer .inputContainer input{font-size: 16px;}
+  .req{ font-size: 9px;}
+  .container{ padding: 30px 15px;}
+  
+}
+/* SPECIAL LOANS */
+.specialLoans{width:100%; background:#eae9e9;}
+.specialLoans .container div,.faqHeading{ border-bottom: 1px solid #909090; color:#04325c; padding: 15px;}
+.specialLoans .container div:last-child{ border-bottom:none;}
+.specialLoans .container div span{ display: block; text-transform: uppercase ; font-weight: bold; margin-bottom: 5px;}
+.faqDescription{display:none;}
+.plusminus {
+    float:right;
+font-family: 'Roboto', sans-serif;background: #fff; font-weight: bold;
+
+}
